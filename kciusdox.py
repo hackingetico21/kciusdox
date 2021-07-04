@@ -9,7 +9,7 @@ print("Ingrese el DNI:")
 dni = input()
 
 BASE_URL = 'https://dniruc.apisperu.com/api/v1/dni/'+dni
-token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImhhY2tpbmdldGljbzIxQGdtYWlsLmNvbSJ9.swwgzb49yDH1QtzY9sShOA4jWnLgA_bhM9MHWPsRcBM"
+token = "aqui va tu token que debes obtener gratis en apisperu.com"
 
 headers = {'Authorization': "Bearer {}".format(token)}
 auth_response = requests.get(BASE_URL, headers=headers)
